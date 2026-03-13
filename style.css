@@ -27,17 +27,17 @@ background-image:url("Sunny.avif");
 
 /* Rain */
 body.Rain{
-background-image:url("images/rain.webp");
+background-image:url("rain.webp");
 }
 
 /* Clouds */
 body.Clouds{
-background-image:url("images/cloud.avif");
+background-image:url("cloud.avif");
 }
 
 /* Snow */
 body.Snow{
-background-image:url("images/snow.jpg");
+background-image:url("snow.jpg");
 }
 
 /* Main Card */
