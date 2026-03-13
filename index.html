@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Weather AI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body class="{{condition}}">
+
+<div class="container">
+
+<h1>Weather AI</h1>
+
+<form method="POST">
+<input type="text" name="city" placeholder="Enter city">
+<button type="submit">Check Weather</button>
+</form>
+
+{% if temp %}
+<div class="result">
+<h2>{{city}}</h2>
+<h3 class="temp">{{temp}}°C</h3>
+<h3>Humidity: {{humidity}}%</h3>
+<h3>Pressure: {{pressure}} hPa</h3>
+</div>
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
